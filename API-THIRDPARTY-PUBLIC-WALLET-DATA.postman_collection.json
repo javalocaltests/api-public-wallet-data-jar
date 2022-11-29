@@ -1,0 +1,395 @@
+{
+	"info": {
+		"_postman_id": "91b44fe6-6170-4255-b255-3fab39bd338a",
+		"name": "API-THIRDPARTY-PUBLIC-WALLET-DATA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CLOUD BANKS",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "apikey",
+						"value": "{{api-key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.apilayer.com/bank_data/banks_by_country?country_code=PE",
+					"protocol": "https",
+					"host": [
+						"api",
+						"apilayer",
+						"com"
+					],
+					"path": [
+						"bank_data",
+						"banks_by_country"
+					],
+					"query": [
+						{
+							"key": "country_code",
+							"value": "PE"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "CLOUD BANKS - RESPONSE",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "apikey",
+								"value": "{{api-key}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.apilayer.com/bank_data/banks_by_country?country_code=PE",
+							"protocol": "https",
+							"host": [
+								"api",
+								"apilayer",
+								"com"
+							],
+							"path": [
+								"bank_data",
+								"banks_by_country"
+							],
+							"query": [
+								{
+									"key": "country_code",
+									"value": "PE"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 23 Nov 2022 01:12:11 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-Ray",
+							"value": "76e608fe0db0a376-LIM"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "cf-apo-via",
+							"value": "origin,host"
+						},
+						{
+							"key": "RateLimit-Limit",
+							"value": "100"
+						},
+						{
+							"key": "RateLimit-Remaining",
+							"value": "89"
+						},
+						{
+							"key": "RateLimit-Reset",
+							"value": "686869"
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "a2f8998f55db6a66763960d3760e062c;o=1"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "PHP/7.4.30"
+						},
+						{
+							"key": "x-ratelimit-limit",
+							"value": "10000"
+						},
+						{
+							"key": "X-RateLimit-Limit-Day",
+							"value": "100"
+						},
+						{
+							"key": "X-RateLimit-Limit-Month",
+							"value": "100"
+						},
+						{
+							"key": "x-ratelimit-remaining",
+							"value": "9999"
+						},
+						{
+							"key": "X-RateLimit-Remaining-Day",
+							"value": "98"
+						},
+						{
+							"key": "X-RateLimit-Remaining-Month",
+							"value": "89"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=aRKtj32Fppkxk1gKtcDyjuH7m7v17AyzlvDNjGEGBQW%2FVs6QQ38UUWdqtUexSk55I1Wnrj0hjsVfYwdYE07Ne89ZgxTlq9qhr5Wf16fIy9Kzs8%2FcuH1nPbufT3%2BUeFjmORg%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"id\": 29527,\n            \"name\": \"AMERIKA FINANCIERA S.A.\"\n        },\n        {\n            \"id\": 29528,\n            \"name\": \"BANCO AZTECA DEL PERU, S.A.\"\n        },\n        {\n            \"id\": 29529,\n            \"name\": \"BANCO CENTRAL DE RESERVA DEL PERU\"\n        },\n        {\n            \"id\": 29530,\n            \"name\": \"BANCO CONTINENTAL\"\n        },\n        {\n            \"id\": 29531,\n            \"name\": \"BANCO DE COMERCIO\"\n        },\n        {\n            \"id\": 29532,\n            \"name\": \"BANCO DE CREDITO DEL PERU\"\n        },\n        {\n            \"id\": 29533,\n            \"name\": \"BANCO DE LA NACION\"\n        },\n        {\n            \"id\": 29534,\n            \"name\": \"BANCO FINANCIERO DEL PERU\"\n        },\n        {\n            \"id\": 29535,\n            \"name\": \"BANCO GNB PERU SA\"\n        },\n        {\n            \"id\": 29536,\n            \"name\": \"BANCO IBEROAMERICANO\"\n        }\n    ],\n    \"links\": {\n        \"first\": \"https://api.apilayer.com/bank_data/banks_by_country?page=1\",\n        \"last\": \"https://api.apilayer.com/bank_data/banks_by_country?page=4\",\n        \"prev\": null,\n        \"next\": \"https://api.apilayer.com/bank_data/banks_by_country?page=2\"\n    },\n    \"meta\": {\n        \"current_page\": 1,\n        \"from\": 1,\n        \"last_page\": 4,\n        \"links\": [\n            {\n                \"url\": null,\n                \"label\": \"&laquo; Previous\",\n                \"active\": false\n            },\n            {\n                \"url\": \"https://api.apilayer.com/bank_data/banks_by_country?page=1\",\n                \"label\": \"1\",\n                \"active\": true\n            },\n            {\n                \"url\": \"https://api.apilayer.com/bank_data/banks_by_country?page=2\",\n                \"label\": \"2\",\n                \"active\": false\n            },\n            {\n                \"url\": \"https://api.apilayer.com/bank_data/banks_by_country?page=3\",\n                \"label\": \"3\",\n                \"active\": false\n            },\n            {\n                \"url\": \"https://api.apilayer.com/bank_data/banks_by_country?page=4\",\n                \"label\": \"4\",\n                \"active\": false\n            },\n            {\n                \"url\": \"https://api.apilayer.com/bank_data/banks_by_country?page=2\",\n                \"label\": \"Next &raquo;\",\n                \"active\": false\n            }\n        ],\n        \"path\": \"https://api.apilayer.com/bank_data/banks_by_country\",\n        \"per_page\": 10,\n        \"to\": 10,\n        \"total\": 33\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "LOCAL BANKS",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8084/banks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"banks"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "LOCAL BANKS - RESPONSE",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8084/banks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"banks"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "transfer-encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/stream+json;charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\"id\":29527,\"name\":\"AMERIKA FINANCIERA S.A.\"}\n{\"id\":29528,\"name\":\"BANCO AZTECA DEL PERU, S.A.\"}\n{\"id\":29529,\"name\":\"BANCO CENTRAL DE RESERVA DEL PERU\"}\n{\"id\":29530,\"name\":\"BANCO CONTINENTAL\"}\n{\"id\":29531,\"name\":\"BANCO DE COMERCIO\"}\n{\"id\":29532,\"name\":\"BANCO DE CREDITO DEL PERU\"}\n{\"id\":29533,\"name\":\"BANCO DE LA NACION\"}\n{\"id\":29534,\"name\":\"BANCO FINANCIERO DEL PERU\"}\n{\"id\":29535,\"name\":\"BANCO GNB PERU SA\"}\n{\"id\":29536,\"name\":\"BANCO IBEROAMERICANO\"}\n"
+				}
+			]
+		},
+		{
+			"name": "LOCAL COMPANIES",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8084/company",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"company"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "LOCAL COMPANIES - RESPONSE",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8084/company",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"company"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "transfer-encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/stream+json;charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\"id\":10000,\"name\":\"Movistar\"}\n{\"id\":10001,\"name\":\"Claro\"}\n{\"id\":10002,\"name\":\"Bitel\"}\n{\"id\":10003,\"name\":\"Entel\"}\n{\"id\":10004,\"name\":\"Vodafone\"}\n{\"id\":10005,\"name\":\"Orange\"}\n{\"id\":10006,\"name\":\"Jazztel\"}\n"
+				}
+			]
+		},
+		{
+			"name": "PHONE VALIDATION",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8084/phone/validate?phoneNumber=51975193625",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"phone",
+						"validate"
+					],
+					"query": [
+						{
+							"key": "phoneNumber",
+							"value": "51975193625"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "PHONE VALIDATION - RESPONSE",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8084/phone/validate?phoneNumber=51975193625",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"phone",
+								"validate"
+							],
+							"query": [
+								{
+									"key": "phoneNumber",
+									"value": "51975193625"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/stream+json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "242"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"carrier\": \"Telefonica del Peru SAA\",\n    \"location\": \"Lima\",\n    \"number\": \"51975193625\",\n    \"valid\": true,\n    \"country_code\": \"PE\",\n    \"country_name\": \"Peru\",\n    \"country_prefix\": \"+51\",\n    \"international_format\": \"+51975193625\",\n    \"line_type\": \"mobile\",\n    \"local_format\": \"975193625\"\n}"
+				}
+			]
+		}
+	]
+}
