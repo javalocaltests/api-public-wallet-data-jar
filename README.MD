@@ -7,6 +7,22 @@ Based in Springboot and Spring WebFlux.
 
 Follow next instructions to start this API.
 
+## Running
+
+Cloning this repository in a local directory.
+
+![ListFiles](./img/listfiles.jpg)
+
+Running in powershell.
+
+![Powershell](./img/powershell.jpg)
+
+Running in Bash.
+
+![Bash](./img/bash.jpg)
+
+
+
 ### Pre-Requisitos
 
 ---
